@@ -7,11 +7,8 @@
 //
 
 import UIKit
-import MultilinePlaceholderTextView
 
 class ViewController: UIViewController {
-    
-    lazy var placeholderTextView = MultilinePlaceholderTextView(
 
     override func viewDidLoad() {
         super.viewDidLoad()

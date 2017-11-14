@@ -10,7 +10,7 @@
 		304F1A211FBB400A004438A3 /* MultilinePlaceholderTextView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 304F1A171FBB400A004438A3 /* MultilinePlaceholderTextView.framework */; };
 		304F1A261FBB400A004438A3 /* MultilinePlaceholderTextViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304F1A251FBB400A004438A3 /* MultilinePlaceholderTextViewTests.swift */; };
 		304F1A281FBB400A004438A3 /* MultilinePlaceholderTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = 304F1A1A1FBB400A004438A3 /* MultilinePlaceholderTextView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		30F04B6E1FBB408A00D46F99 /* MultilinePlaceholderTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F04B6D1FBB408A00D46F99 /* MultilinePlaceholderTextView.swift */; };
+		30F04B6E1FBB408A00D46F99 /* PlaceHolderTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F04B6D1FBB408A00D46F99 /* PlaceHolderTextView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,7 +30,7 @@
 		304F1A201FBB400A004438A3 /* MultilinePlaceholderTextViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MultilinePlaceholderTextViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		304F1A251FBB400A004438A3 /* MultilinePlaceholderTextViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultilinePlaceholderTextViewTests.swift; sourceTree = "<group>"; };
 		304F1A271FBB400A004438A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		30F04B6D1FBB408A00D46F99 /* MultilinePlaceholderTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultilinePlaceholderTextView.swift; sourceTree = "<group>"; };
+		30F04B6D1FBB408A00D46F99 /* PlaceHolderTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceHolderTextView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +73,7 @@
 		304F1A191FBB400A004438A3 /* MultilinePlaceholderTextView */ = {
 			isa = PBXGroup;
 			children = (
-				30F04B6D1FBB408A00D46F99 /* MultilinePlaceholderTextView.swift */,
+				30F04B6D1FBB408A00D46F99 /* PlaceHolderTextView.swift */,
 				304F1A1A1FBB400A004438A3 /* MultilinePlaceholderTextView.h */,
 				304F1A1B1FBB400A004438A3 /* Info.plist */,
 			);
@@ -200,7 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30F04B6E1FBB408A00D46F99 /* MultilinePlaceholderTextView.swift in Sources */,
+				30F04B6E1FBB408A00D46F99 /* PlaceHolderTextView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

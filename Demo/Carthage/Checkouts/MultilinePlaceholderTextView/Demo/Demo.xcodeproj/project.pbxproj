@@ -14,7 +14,6 @@
 		30F04B861FBB40D200D46F99 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30F04B841FBB40D200D46F99 /* LaunchScreen.storyboard */; };
 		30F04B911FBB40D200D46F99 /* DemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F04B901FBB40D200D46F99 /* DemoTests.swift */; };
 		30F04B9C1FBB40D200D46F99 /* DemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F04B9B1FBB40D200D46F99 /* DemoUITests.swift */; };
-		30F04BAB1FBB459900D46F99 /* MultilinePlaceholderTextView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30F04BAA1FBB459900D46F99 /* MultilinePlaceholderTextView.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +47,6 @@
 		30F04B971FBB40D200D46F99 /* DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		30F04B9B1FBB40D200D46F99 /* DemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoUITests.swift; sourceTree = "<group>"; };
 		30F04B9D1FBB40D200D46F99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		30F04BAA1FBB459900D46F99 /* MultilinePlaceholderTextView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MultilinePlaceholderTextView.framework; path = Carthage/Build/iOS/MultilinePlaceholderTextView.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +54,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30F04BAB1FBB459900D46F99 /* MultilinePlaceholderTextView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,7 +81,6 @@
 				30F04B8F1FBB40D200D46F99 /* DemoTests */,
 				30F04B9A1FBB40D200D46F99 /* DemoUITests */,
 				30F04B791FBB40D200D46F99 /* Products */,
-				30F04BA91FBB459900D46F99 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -129,14 +125,6 @@
 			path = DemoUITests;
 			sourceTree = "<group>";
 		};
-		30F04BA91FBB459900D46F99 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				30F04BAA1FBB459900D46F99 /* MultilinePlaceholderTextView.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,7 +135,6 @@
 				30F04B741FBB40D200D46F99 /* Sources */,
 				30F04B751FBB40D200D46F99 /* Frameworks */,
 				30F04B761FBB40D200D46F99 /* Resources */,
-				30F04BAC1FBB45A700D46F99 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -266,23 +253,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		30F04BAC1FBB45A700D46F99 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/MultilinePlaceholderTextView.framework",
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		30F04B741FBB40D200D46F99 /* Sources */ = {
@@ -457,10 +427,6 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
 				INFOPLIST_FILE = Demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = harakenta.Demo;
@@ -475,10 +441,6 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
 				INFOPLIST_FILE = Demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = harakenta.Demo;
