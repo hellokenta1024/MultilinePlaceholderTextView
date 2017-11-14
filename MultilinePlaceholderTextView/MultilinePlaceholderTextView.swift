@@ -52,9 +52,16 @@ open class MultilinePlaceholderTextView: UITextView {
         NotificationCenter.default.removeObserver(self)
     }
     
-    public init() {
+    public convenience init() {
         
-        super.init(frame: CGRect.zero, textContainer: nil)
+        self.init(frame: CGRect.zero, textContainer: nil)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(textDidChange), name: .UITextViewTextDidChange, object: nil)
+    }
+    
+    public override init(frame: CGRect, textContainer: NSTextContainer?) {
+        
+        super.init(frame: frame, textContainer: textContainer)
         
         NotificationCenter.default.addObserver(self, selector: #selector(textDidChange), name: .UITextViewTextDidChange, object: nil)
     }
