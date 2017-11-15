@@ -15,11 +15,10 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        view.backgroundColor = .lightGray
+        view.backgroundColor = UIColor.lightText
         
         let placeholderTextView = MultilinePlaceholderTextView()
-        placeholderTextView.center = view.center
-        placeholderTextView.bounds.size = CGSize(width: 300, height: 200)
+        placeholderTextView.frame = CGRect(x: 10, y: 180, width: UIScreen.main.bounds.width - 20, height: 200)
         placeholderTextView.backgroundColor = .white
         placeholderTextView.layer.cornerRadius = 8
         
@@ -28,13 +27,26 @@ class ViewController: UIViewController {
         
         view.addSubview(placeholderTextView)
         
-        // If you want to use
-        placeholderTextView.placeholder = "this is placeholder \nmultiline is available"
+        placeholderTextView.placeholder = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        
+        // You can use NSAttributedString for placeholder!
+        //placeholderTextView.attributedPlaceholder = configureAttributedString()
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    private func configureAttributedString() -> NSAttributedString {
+        
+        let firstAttributes = [NSAttributedStringKey.foregroundColor: UIColor.lightGray, NSAttributedStringKey.font: UIFont.systemFont(ofSize: 17)]
+        let secondAttributes = [NSAttributedStringKey.foregroundColor: UIColor.black, NSAttributedStringKey.font: UIFont.systemFont(ofSize: 17)]
+        
+        let first = NSMutableAttributedString(string: "AttributedStringa is also available!!!  ", attributes: firstAttributes)
+        let second = NSMutableAttributedString(string: "This is amazing!!!", attributes: secondAttributes)
+        
+        let result = NSMutableAttributedString()
+        
+        result.append(first)
+        result.append(second)
+        
+        return result
     }
 }
 
