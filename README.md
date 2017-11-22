@@ -12,7 +12,7 @@ placeholderTextView.textContainerInset = UIEdgeInsets(top: 10, left: 10, bottom:
 placeholderTextView.placeholder = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
 placeholderTextView.attributedPlaceholder = configureAttributedString()
 ```
-![result](https://github.com/KEN-chan/MultilinePlaceholderTextView/blob/media/medias/multiline-placeholder-textview.gif)
+![result](https://github.com/KEN-chan/MultilinePlaceholderTextView/blob/media/medias/multiline-placeholder-textview-ss.png)
 
 ## Installation
 
